@@ -6,7 +6,7 @@ part 'hello_world_state.freezed.dart';
 @freezed
 class HelloWorldState with _$HelloWorldState {
   /// ファクトリーコンストラクタ
-  const factory HelloWorldState({
+  factory HelloWorldState({
     @Default('Hello World HookWidget') String title,
   }) = _HelloWorldState;
 

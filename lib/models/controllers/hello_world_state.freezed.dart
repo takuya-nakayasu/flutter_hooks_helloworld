@@ -103,7 +103,7 @@ class __$HelloWorldStateCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_HelloWorldState extends _HelloWorldState with DiagnosticableTreeMixin {
-  const _$_HelloWorldState({this.title = 'Hello World HookWidget'}) : super._();
+  _$_HelloWorldState({this.title = 'Hello World HookWidget'}) : super._();
 
   @JsonKey(defaultValue: 'Hello World HookWidget')
   @override
@@ -140,8 +140,8 @@ class _$_HelloWorldState extends _HelloWorldState with DiagnosticableTreeMixin {
 }
 
 abstract class _HelloWorldState extends HelloWorldState {
-  const factory _HelloWorldState({String title}) = _$_HelloWorldState;
-  const _HelloWorldState._() : super._();
+  factory _HelloWorldState({String title}) = _$_HelloWorldState;
+  _HelloWorldState._() : super._();
 
   @override
   String get title;
