@@ -17,7 +17,7 @@ final _privateConstructorUsedError = UnsupportedError(
 class _$HelloWorldStateTearOff {
   const _$HelloWorldStateTearOff();
 
-  _HelloWorldState call({String title = 'Hello World HookWidget'}) {
+  _HelloWorldState call({String title = 'Hello World HookWidget2'}) {
     return _HelloWorldState(
       title: title,
     );
@@ -103,9 +103,9 @@ class __$HelloWorldStateCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_HelloWorldState extends _HelloWorldState with DiagnosticableTreeMixin {
-  _$_HelloWorldState({this.title = 'Hello World HookWidget'}) : super._();
+  _$_HelloWorldState({this.title = 'Hello World HookWidget2'}) : super._();
 
-  @JsonKey(defaultValue: 'Hello World HookWidget')
+  @JsonKey(defaultValue: 'Hello World HookWidget2')
   @override
   final String title;
 

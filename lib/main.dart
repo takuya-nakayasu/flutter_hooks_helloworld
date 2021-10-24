@@ -15,12 +15,12 @@ class MyApp extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     // final helloWorldState = useState('Hello World HookWidget');
-    final helloWorldState = ref.watch(helloWorldProvider.notifier);
+    final _title = ref.watch(helloWorldProvider.select((value) => value.title));
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: const Text('Example')),
         body: Center(
-          child: Text(helloWorldState.state.title),
+          child: Text(_title),
         ),
       ),
     );
